@@ -1,0 +1,961 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mango Business</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="{% static 'js/scriptEng.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="{% static 'css/stylesheet.css' %}" rel="stylesheet" type="text/css">
+    <!---<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">--->
+    <link rel="shortcut icon" href="{% static 'images/favicon_1.ico' %}" type="image/x-icon" />
+</head>
+<body>
+<header>
+    <nav class="dws-menu">
+      <ul>
+        <li><i class="fa fa-"><a href="{% url 'home' %}">Default</a></i></li>
+        <li><i class="fa fa-">Currency</i>
+          <ul>
+            <li><i class="fa fa-"><a  href="{% url 'home' %}">€</a></i></li>
+            <li><i class="fa fa-"><a href="{% url 'Rus' %}">₽</a></i></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>
+<div class="tt">
+      <p style="text-align: center;">
+        <span style="font-size:16px;" class="">Equipment for thermal processing of food products:</span></p>
+      <ul class="">
+        <li class=""><span style="font-size:16px;" class="">vegetables, fruits, herbs, spices, nuts;</span></li>
+        <li class=""><span style="font-size:16px;" class="">drying, frying, pasteurization, foaming and increasing volume, preparing granola, equalizing humidity, improvement of organoleptic characteristics of products after long-term storage, defrosting (thawing), destruction of pests;</span></li>
+        <li class=""><span style="font-size:16px;" class="">10-12 kg of incoming products, up to 9 liters of evaporated moisture;</span></li>
+        <li class=""><span style="font-size:16px;" class="">standard preset recipes;</span></li>
+        <li class=""><span style="font-size:16px;" class="">development of technology to suit your needs and products.</span></li>
+      </ul>
+</div>
+<form action="{% url 'resultEng' %}">
+<h1>MANGO BUSINESS</h1>
+<div class="Payback">
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1" >Equipment</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">The Mango 2.0</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="ustanovkamango" id="qw1" value="109 900" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='109 900'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cheese slicing equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="narezka" id="qw2" value="50 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='50 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Ventilation equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="vent" id="qw3" value="50 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='50 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Technological equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="teh" id="qw4" value="50 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='50 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Refrigeration equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="freez" id="qw5" value="50 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='50 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Packaging, consumables</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="package" id="qw6" value="50 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='50 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Total, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000 disable"><input class="bold" type="text" name="itogo" value="359 900" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Overhead costs</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Rent, euro/month</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="arenda" id="qw7" value="2 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='2 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of employees</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kolsotr" id="qw8" value="4" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='4'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Salary per month including taxes</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="zp" id="qw9" value="1 500" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1 500'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Shifts per month</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenmes" id="qw10" value="20" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='20'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Shift, hour</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenchas" id="qw11" value="8" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='8'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Shift cost, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="stoimsmeni" value="400" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Total, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="itogo2" value="8 000" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Raw materials and output</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of raw materials, kg (Valio Oltermanni),euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stsir1" id="qw12" value="9" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='9'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Load, kg (max. 5 kg)</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="loadequip" id="qw13" value="4" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='4'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Product yield, %</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input  class="dis" type="text" name="exitcomplproduct" value="50" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cycle time, min including loading</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="timecikl" id="qw14" value="30" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='30'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of cycles per hour</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolcikl" value="2" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Portion, gr.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="porcup" id="qw15" value="28" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='28'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of portions per cycle, pcs</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcikl" value="71" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of servings per hour, pcs</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcchas" value="142" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Cost of a portion by raw material, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="sebestpor" value="0.5" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Direct costs</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Electricity cost, euro/kWh</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stEE" id="qw16" value="0.2" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.2'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Max consumption kWh</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="maxpot" id="qw17" value="15" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='15'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Consumption rate</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kef" id="qw18" value="0.9" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.9'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of water euro/m<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stwater" id="qw19" value="4" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='4'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Water consumption per hour, m<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="raswater" id="qw24" value="0.6" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.6'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of carriers per hour, euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoschas" value="5.1" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of carriers, cycle, euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoscikl" value="2.5" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Cost of media, portion, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="ctnospor" value="0.04" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Packaging, euro/portion</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold1" name="upak" id="qw20" value="0.1" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.1'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Performance</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div></div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Portions per shift, pcs</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">454</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">568</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">682</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">795</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">909</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Cost of production per shift, euros</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">691</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">764</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">836</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">909</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">982</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Cost per serving, euros</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Raw materials per shift, kg</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">25</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">32</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">38</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">45</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">51</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Raw materials per month, kg</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">500</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">640</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">760</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">900</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Margin per shift</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Sales, euro/portion</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw25" name="sto" value="1.8" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1.8'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">126</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">258</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">392</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">522</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">654</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw26" name="stodvapyat" value="2.0" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='2.0'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">217</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">372</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">528</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">681</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">836</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw27" name="stopyatdes" value="2.5" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='2.5'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">444</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">656</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">869</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 078</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 290</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw28" name="stosempesyat"  value="3.0" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='3.0'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">671</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">940</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 210</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 476</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 745</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw29" name="dvesti"  value="3.5" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='3.5'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">898</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 224</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 551</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 874</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2 200</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result1">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Payback in calendar days</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Sales, euro/portion</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">1.8</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">4 285</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2 092</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 377</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 034</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">825</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">2.0</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2 488</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">1 451</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">1 022</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">793</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">646</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">2.5</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 216</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">823</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">621</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">501</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">418</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">3.0</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">805</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">574</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">446</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">366</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">309</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">3.5</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">601</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">441</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">348</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">288</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">245</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="podpis">* - Dear Partner, in order to get the calculation actual for you it is necessary to fill the cells highlighted in yellow color with the data actual for your region. A few notes: <br>
+                1. Gross profit before taxation is taken in the calculation. <br>
+                2. In the table, where the payback period is calculated pink color highlighted really possible range of values.
+    </div>
+  </div>
+  <div class="but">
+    <button class="btn1" type="submit">Calculate</button>
+  </div>
+</div>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

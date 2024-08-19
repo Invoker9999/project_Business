@@ -1,0 +1,976 @@
+
+
+h1 {
+    text-align: center;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #DCDCDC;
+}
+.Payback {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding:  24px 20px;
+    gap: 10px 24px;
+
+
+    position: relative;
+    width: 100%;
+    height: 2100px;
+}
+
+.Equipment {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 48px;
+    gap: 16px 24px;
+
+    width: 600px;
+    height: 300px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Equipment1 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 48px;
+    gap: 16px 24px;
+
+    width: 600px;
+    height: 370px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Frame5 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 600px;
+    height: 300px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Heading {
+   box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 10px;
+
+    width: 600px;
+    height: 30px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.Zagolovok1 {
+    width: 400px;
+    height: 30px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+
+}
+
+.Zagolovok2 {
+    width: 724px;
+    height: 18px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+
+}
+
+
+
+
+.Block {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 600px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.Price {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+
+    padding: 4px 8px;
+    gap: 10px;
+
+    width: 400px;
+    height: 30px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+.Price2 {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 10px;
+
+    width: 920px;
+    height: 30px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: #D2D2D2;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #A9A9A9;
+
+}
+
+.Price3 {
+
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 10px;
+
+    width: 400px;
+    height: 30px;
+
+
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+.Price4 {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 8px;
+    gap: 10px;
+
+    width: 400px;
+    height: 30px;
+
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background: #D2D2D2;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+}
+
+
+.Naimen {
+    width: 380px;
+    height: 30px;
+
+
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 18px;
+
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.Description {
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 10px;
+
+    width: 200px;
+
+
+    /*border: 1px solid #000000;*/
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.000 {
+    width: 200px;
+    height: 30px;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+
+.Itog {
+    width: 380px;
+    height: 30px;
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.Itog000 {
+    width: 200px;
+    height: 30px;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+input {
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 0px 0px;
+    border-width: 1.5px;
+    gap: 0px;
+    display: flex;
+    border-radius: 8px;
+    left: 0px;
+    height: 31px;
+    width: 200px;
+    padding-left: 3px;
+}
+
+.Result {
+    /* Auto layout */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 48px;
+    gap: 12px 12px;
+
+
+    width: 1320px;
+    height: 250px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+
+}
+
+.Result1 {
+    /* Auto layout */
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 48px;
+    gap: 12px 12px;
+
+
+    width: 1320px;
+    height: 350px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+
+}
+
+.Frame13 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 2px;
+    justify-content: flex-start;
+    width: 1320px;
+    height: 250px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.Frame7 {
+    /* Auto layout */
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 1320px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.Frame6 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 0px;
+    gap: 2px;
+
+    width: 1320px;
+    height: 32px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.Frame8 {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+    justify-content: flex-start;
+    width: 1320px;
+    height: 32px;
+
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.Block1 {
+    background: white;
+    border-radius: 8px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2px;
+    display: flex;
+    width: 182.5px;
+
+}
+
+.Description1 {
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #A9A9A9;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px black solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    width: 174px;
+
+}
+
+.Pers {
+    width: 153px;
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    word-wrap: break-word;
+
+}
+
+.Description2 {
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: #DCDCDC;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px black solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    width: 174px;
+}
+
+.Description3 {
+    height: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background: #D2FDC4;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px black solid;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    width: 174px;
+}
+
+.pro {
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: left;
+
+
+}
+
+.but {
+    /* Auto layout */
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 12px 48px;
+    gap: 16px 24px;
+
+
+    width: 500px;
+    height: 50px;
+
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+
+}
+
+.btn1 {
+  appearance: none;
+    border: 0px;
+  border-radius: 5px;
+  /* Permalink - use to edit and share this gradient. Постоянная ссылка - используйте для редактирования и обмена этим градиентом: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+    background: rgb(245,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+
+
+  padding: 8px 16px;
+  font-size: 16px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+
+
+}
+
+.btn1:hover {
+  color: #FFFFFF;
+  /* Permalink - use to edit and share this gradient. Постоянная ссылка - используйте для редактирования и обмена этим градиентом: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+    background: rgb(245,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+}
+
+.btn1:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px black;
+}
+
+
+.bold {
+    font-weight:bold;
+    width: 201px;
+    background-color: #DCDCDC;
+
+
+}
+
+.dis {
+    background-color: #DCDCDC;
+}
+
+.bold {
+    font-weight:bold;
+    width: 201px;
+    background-color: #DCDCDC;
+
+
+}
+
+
+
+.bold1 {
+    font-weight:bold;
+    width: 201px;
+    background-color: white;
+
+
+}
+
+
+
+.podpis {
+    position: relative;
+
+}
+
+.tt {
+   padding:  24px 45px;
+}
+
+header {
+    margin-top: 0px;
+    margin-left: 1190px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dws-menu *{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    min-width: 100px;
+    text-align: center;
+
+}
+
+.dws-menu ul,
+.dws-menu il {
+    list-style: none;
+
+
+
+}
+
+i {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+
+
+}
+
+.dws-menu > ul {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.dws-menu > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+    display: block;
+    /* Permalink - use to edit and share this gradient. Постоянная ссылка - используйте для редактирования и обмена этим градиентом: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+    background: rgb(245,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+    padding: 15px; 30 px;
+    font-size: 14 px;
+    color: #474b4e;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.dws-menu > ul li > a i.fa{
+    position: absolute;
+    top; 30px;
+    left: 12px;
+    font-size: 10px;
+    background: rgba(245,246,246,1) 100%;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.dws-menu > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+    border-right: 1px solid #b2b3b5;
+}
+
+.dws-menu > ul li:last-child{
+    border-right: 1px solid #babbbb;
+}
+
+.dws-menu li a:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu li i:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu li:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu li ul{
+    position: absolute;
+    min-width: 100px;
+    display: none;
+    margin-top: 15px;
+    margin-left: -15.5px;
+    text-align: center;
+
+}
+
+.dws-menu li > ul li{
+    border: 1px solid #c7c8ca;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+
+
+.dws-menu li > ul li a{
+    padding: 10px 50.5px 10px 51px;
+    min-width: 100px;
+    text-transform: none;
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    text-decoration: none;
+
+    text-align: center;
+
+}
+
+.dws-menu li:hover > ul{
+    display: block;
+    color: #ffffff;
+
+}
+
+a {
+    color: black;
+}
+
+
+
+
+.dws-menu1 *{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    min-width: 100px;
+    text-align: center;
+
+}
+
+.dws-menu1 ul,
+.dws-menu1 il {
+    list-style: none;
+
+
+
+}
+
+.dws-menu1 > ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.dws-menu1 > ul li{
+    position: relative;
+    border-right: 1px solid #c7c8ca;
+    display: block;
+    /* Permalink - use to edit and share this gradient. Постоянная ссылка - используйте для редактирования и обмена этим градиентом: https://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+    background: rgb(245,246,246); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(245,246,246,1)), color-stop(21%,rgba(219,220,226,1)), color-stop(49%,rgba(184,186,198,1)), color-stop(80%,rgba(221,223,227,1)), color-stop(100%,rgba(245,246,246,1))); /* Chrome4-9,Safari4-5 */
+    background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Opera 11.10-11.50 */
+    background: -ms-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* IE10 preview */
+    background: linear-gradient(to bottom,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=0 ); /* IE6-9 */
+    padding: 15px; 30 px;
+    font-size: 14 px;
+    color: #474b4e;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.dws-menu1 > ul li > a i.fa{
+    position: absolute;
+    top; 30px;
+    left: 12px;
+    font-size: 10px;
+    background: rgba(245,246,246,1) 100%;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.dws-menu1 > ul li:first-child{
+    border-left: 1px solid #b2b3b5;
+
+}
+
+.dws-menu1 > ul li:last-child{
+    border-right: 1px solid #babbbb;
+}
+
+.dws-menu1 li a:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu1 li i:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu1 li:hover{
+
+    color: #ffffff;
+    box-shadow: 10px 5px 10 px -5px black;
+    transition: all 0.3s ease;
+
+}
+
+.dws-menu1 li ul{
+    position: absolute;
+    min-width: 100px;
+    display: none;
+    margin-top: 15px;
+    margin-left: -15.5px;
+    text-align: center;
+
+}
+
+.dws-menu1 li > ul li{
+    border: 1px solid #c7c8ca;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+
+
+.dws-menu1 li > ul li a{
+    padding: 10px 50px 10px 50px;
+    min-width: 100px;
+    text-transform: none;
+    background: -o-linear-gradient(top,  rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%);
+    text-decoration: none;
+
+    text-align: center;
+
+}
+
+.dws-menu1 li:hover > ul{
+    display: block;
+    color: #ffffff;
+
+}
+

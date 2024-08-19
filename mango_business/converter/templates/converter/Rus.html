@@ -1,0 +1,950 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mango Business</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="{% static 'css/stylesheet.css' %}" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<header>
+    <nav class="dws-menu1">
+      <ul>
+        <li><i class="fa fa-"><a href="{% url 'home' %}">Сброс</a></i></li>
+        <li><i class="fa fa-">Валюта</i>
+          <ul>
+            <li><i class="fa fa-"><a  href="{% url 'home' %}">€</a></i></li>
+            <li><i class="fa fa-"><a href="{% url 'Rus' %}">₽</a></i></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>
+  <div class="tt">
+      <p style="text-align: center;">
+        <span style="font-size:16px;" class="">Оборудование для термической обработки пищевых продуктов:</span></p>
+      <ul class="">
+        <li class=""><span style="font-size:16px;" class="">овощи, фрукты, травы, специи, орехи;</span></li>
+        <li class=""><span style="font-size:16px;" class="">сушка, жарка, пастеризация, вспенивание и увеличение объема, приготовление гранолы, выравнивание влажности, улучшение органолептических характеристик продуктов после длительного хранения, дефростация(размораживание), уничтожение вредителей;</span></li>
+        <li class=""><span style="font-size:16px;" class="">10-12 кг входящей продукции, до 9 литров испаряемой влаги;</span></li>
+        <li class=""><span style="font-size:16px;" class="">стандартные предустановленные рецепты;</span></li>
+        <li class=""><span style="font-size:16px;" class="">разработка&nbsp;технологии под Ваши потребности и продукты.</span></li>
+      </ul>
+  </div>
+<form action="{% url 'resultRus' %}">
+<h1>МАНГО БИЗНЕС</h1>
+<div class="Payback">
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1" >Оборудование для проекта МАНГО БИЗНЕС</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Установка Манго</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="ustanovkamango" id="qw1" value="6 500 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='6 500 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Оборудование для нарезки</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="narezka" id="qw2" value="500 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='500 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Вентиляционное оборудование</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="vent" id="qw3" value="1 000 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1 000 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Технологическое оборудование</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="teh" id="qw4" value="1 000 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1 000 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Холодильный объем</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="freez" id="qw5" value="1 000 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1 000 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Упаковка, расходные материалы</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="package" id="qw6" value="1 000 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='1 000 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Итого, руб.</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000 disable"><input class="bold" type="text" name="itogo" value="11 000 000" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1" >Накладные расходы</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Аренда, руб./мес.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="arenda" id="qw7" value="200 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='200 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Количество сотрудников</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kolsotr" id="qw8" value="4" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='4'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Зарплата в месяц, с учетом налогов</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="zp" id="qw9" value="300 000" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='300 000'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Смен в месяц</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenmes" id="qw10" value="20" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='20'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Смена, час</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenchas" id="qw11" value="8" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='8'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Стоимость смены, руб</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="stoimsmeni" value="70 000" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Итого месяц, руб.</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="itogo2" value="1 400 000" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Сырье и выход</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Стоимость сырья, за 1 кг</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stsir1" id="qw12" value="500" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='500'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Загрузка установки Манго, кг</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="loadequip" id="qw13" value="5" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='5'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Выход готового продукта, %</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input  class="dis" type="text" name="exitcomplproduct" value="50" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Время цикла, мин. с учетом загрузки</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="timecikl" id="qw14" value="30" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='30'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Кол-во циклов в час</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolcikl" value="2" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Порция в упаковке, гр.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="porcup" id="qw15" value="28" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='28'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Кол-во порций за цикл, шт.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcikl" value="89" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Кол-во порций за час, шт.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcchas" value="178" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Себестоимость порции по сырью</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="sebestpor" value="28" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Прямые расходы</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Стоимость Э/Э, руб./кВт/ч</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stEE" id="qw16" value="20" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='20'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Максимальное потребление кВт/ч</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="maxpot" id="qw17" value="15" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='15'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Коэффициент потребления</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kef" id="qw18" value="0.9" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.9'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Стоимость воды руб./м<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stwater" id="qw19" value="150" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='150'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Расход воды в час, м<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="raswater" id="qw24" value="0.6" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='0.6'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Стоимость носителей в час, руб.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoschas" value="360" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Стоимость носителей, цикл, руб.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoscikl" value="180" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Стоимость носителей на порц, руб.</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="ctnospor" value="2.02" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Упаковка, руб./порцию</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold1" name="upak" id="qw20" value="10" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='10'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Производительность</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Загруженность оборудования в процентах </div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div></div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Порций в смену, шт</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">571</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">714</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">857</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 000</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 043</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Себест-ть продукции за смену</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">52 860</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">58 583</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">64 299</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">70 016</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">75 733</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Себест-ть за порцию</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">93</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">82</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">75</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">70</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">66</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Сырье в смену, кг</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">32</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">40</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">48</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">56</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">64</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Сырье в месяц, кг</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">640</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">800</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">960</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 120</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">1 280</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Маржа в смену</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Загруженность оборудования в процентах </div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Продажа, валюта/порцию</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw31" name="sto" value="100" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='100'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw32" name="stodvapyat" value="125" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='125'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2 843</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">14 984</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">27 125</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw33" name="stopyatdes" value="150" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='150'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">8 560</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">24 272</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">39 984</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">55 696</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw34" name="stosempesyat"  value="175" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='175'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">7 134</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">26 417</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">45 701</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">64 984</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">84 267</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw35" name="dvesti"  value="200" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='200'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">21 419</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">44 274</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">67 129</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">89 984</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">112 839</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result1">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Окупаемость в календарных днях</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Загруженность оборудования в процентах </div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Продажа, валюта/порцию</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">100</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">125</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">5 275</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">1 001</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">553</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">150</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">Убыток</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">1 752</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">618</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">375</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">269</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">175</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">2 103</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">568</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">328</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">231</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">178</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">200</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">700</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">339</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">223</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">167</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">133</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="podpis">* - Уважаемый Партнер, для того, чтобы получить расчет актуальный для Вас необходимо заполнить ячейки выделенные белым цветом данными актуальными для Вашего региона.
+                Несколько примечаний: <br>
+                1. В расчете берется показатель валовой прибыли до налогообложения. <br>
+                2. В таблице, где рассчитывается срок окупаемости зеленым цветом выделен реально возможный диапазон значений.
+    </div>
+  </div>
+  <div class="but">
+    <button class="btn1" type="submit">Рассчитать</button>
+  </div>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,949 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mango Business</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="{% static 'js/scriptEng.js' %}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="{% static 'css/stylesheet.css' %}" rel="stylesheet" type="text/css">
+    <!---<link rel="apple-touch-icon" sizes="180x180" href="{% static 'images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'images/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'images/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">--->
+    <link rel="shortcut icon" href="{% static 'images/favicon_1.ico' %}" type="image/x-icon" />
+</head>
+<body>
+<header>
+    <nav class="dws-menu">
+      <ul>
+        <li><i class="fa fa-"><a href="{% url 'home' %}">Default</a></i></li>
+        <li><i class="fa fa-">Currency</i>
+          <ul>
+            <li><i class="fa fa-"><a  href="{% url 'home' %}">€</a></i></li>
+            <li><i class="fa fa-"><a href="{% url 'Rus' %}">₽</a></i></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+</header>
+<div class="tt">
+      <p style="text-align: center;">
+        <span style="font-size:16px;" class="">Equipment for thermal processing of food products:</span></p>
+      <ul class="">
+        <li class=""><span style="font-size:16px;" class="">vegetables, fruits, herbs, spices, nuts;</span></li>
+        <li class=""><span style="font-size:16px;" class="">drying, frying, pasteurization, foaming and increasing volume, preparing granola, equalizing humidity, improvement of organoleptic characteristics of products after long-term storage, defrosting (thawing), destruction of pests;</span></li>
+        <li class=""><span style="font-size:16px;" class="">10-12 kg of incoming products, up to 9 liters of evaporated moisture;</span></li>
+        <li class=""><span style="font-size:16px;" class="">standard preset recipes;</span></li>
+        <li class=""><span style="font-size:16px;" class="">development of technology to suit your needs and products.</span></li>
+      </ul>
+</div>
+<form action="{% url 'resultEng' %}">
+<h1>MANGO BUSINESS</h1>
+<div class="Payback">
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1" >Equipment</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">The Mango 2.0</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="ustanovkamango" id="qw1" value="{{ name1 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name1 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cheese slicing equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="narezka" id="qw2" value="{{ name2 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name2 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Ventilation equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="vent" id="qw3" value="{{ name3 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name3 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Technological equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="teh" id="qw4" value="{{ name4 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name4 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Refrigeration equipment</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="freez" id="qw5" value="{{ name5 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name5 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Packaging, consumables</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="package" id="qw6" value="{{ name6 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name6 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Total, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" id="qw21" type="text" name="itogo" value="{{ name7 }}" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Overhead costs</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Rent, euro/month</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="arenda" id="qw7" value="{{ name8 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name8 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of employees</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kolsotr" id="qw8" value="{{ name9 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name9 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Salary per month including taxes</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="zp" id="qw9" value="{{ name10 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name10 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Shifts per month</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenmes" id="qw10" value="{{ name11 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name11 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Shift, hour</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="smenchas" id="qw11" value="{{ name12 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name12 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Shift cost, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" id="qw22" type="text" name="stoimsmeni" value="{{ name14 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Total, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" id="qw23" type="text" name="itogo2" value="{{ name13 }}" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Raw materials and output</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of raw materials, kg (Valio Oltermanni),euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stsir1" id="qw12" value="{{ name15 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name15 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Load, kg (max. 5 kg)</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="loadequip" id="qw13" value="{{ name16 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name16 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Product yield, %</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" name="exitcomplproduct" value="{{ name17 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cycle time, min including loading</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="timecikl" id="qw14" value="{{ name18 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name18 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of cycles per hour</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolcikl" value="{{ name19 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Portion, gr.</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="porcup" id="qw15" value="{{ name20 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name20 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of portions per cycle, pcs</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcikl" value="{{ name21 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Number of servings per hour, pcs</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="kolporcchas" value="{{ name22 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Cost of a portion by raw material, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="sebestpor" value="{{ name23 }}" readonly></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Equipment1">
+    <div class="Frame5">
+      <div class="Heading">
+        <div class="Zagolovok1">Direct costs</div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Electricity cost, euro/kWh</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stEE" id="qw16" value="{{ name24 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name24 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Max consumption kWh</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="maxpot" id="qw17" value="{{ name25 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name25 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Consumption rate</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="kef" id="qw18" value="{{ name26 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name26 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of water euro/m<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="stwater" id="qw19" value="{{ name27 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name27 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Water consumption per hour, m<sup>3</sup></div>
+        </div>
+        <div class="Description">
+          <div class="000"><input name="raswater" id="qw24" value="{{ name28 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name28 }}'}"></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of carriers per hour, euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoschas" value="{{ name29 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Naimen">Cost of carriers, cycle, euro</div>
+        </div>
+        <div class="Description">
+          <div class="000"><input class="dis" type="text" name="stnoscikl" value="{{ name30 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Cost of media, portion, euro</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold" type="text" name="ctnospor" value="{{ name31 }}" readonly></div>
+        </div>
+      </div>
+      <div class="Block">
+        <div class="Price">
+          <div class="Itog"><b>Packaging, euro/portion</b></div>
+        </div>
+        <div class="Description">
+          <div class="Itog000"><input class="bold1" id="qw20" name="upak" value="{{ name32 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name32 }}'}"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Performance</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div></div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Portions per shift, pcs</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name33 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name34 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name35 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name36 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name37 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Cost of production per shift, euros</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name38 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name39 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name40 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name41 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name42 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Cost per serving, euros</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name43 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name44 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name45 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name46 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name47 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Raw materials per shift, kg</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name48 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name49 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name50 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name51 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name52 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">Raw materials per month, kg</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name53 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name54 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name55 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name56 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name57 }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Margin per shift</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Sales, euro/portion</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw25" name="sto"  value="{{ name108 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name108 }}'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name58 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name59 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name60 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name61 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name62 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw26" name="stodvapyat"  value="{{ name109 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name109 }}'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name63 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name64 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name65 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name66 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name67 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw27" name="stopyatdes"  value="{{ name110 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name110 }}'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name68 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name69 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name70 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name71 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name72 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw28" name="stosempesyat"  value="{{ name111 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name111 }}'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name73 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name74 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name75 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name76 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name77 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price3">
+            <div class="Naimen"><input class="pro" id="qw29" name="dvesti"  value="{{ name112 }}" type="text" onfocus="this.value=''"
+                                  onblur="if (this.value==''){this.value='{{ name112 }}'}"></div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name78 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name79 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name80 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name81 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name82 }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="Result1">
+      <div class="Frame13">
+        <div class="Frame7">
+          <div class="Price4">
+            <div class="Zagolovok1">Payback in calendar days</div>
+          </div>
+          <div class="Price2">
+            <div class="Zagolovok2">Equipment loading</div>
+          </div>
+        </div>
+        <div class="Frame6">
+          <div class="Price">
+            <div>Sales, euro/portion</div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">40%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">50%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">60%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">70%</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description1">
+              <div class="Pers">80%</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">{{ name108 }}</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name83 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name84 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name85 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name86 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name87 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">{{ name109 }}</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name88 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name89 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name90 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name91 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name92 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">{{ name110 }}</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name93 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name94 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name95 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name96 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name97 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">{{ name111 }}</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name98 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name99 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name100 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description3">
+              <div class="Pers">{{ name101 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name102 }}</div>
+            </div>
+          </div>
+        </div>
+        <div class="Frame8">
+          <div class="Price">
+            <div class="Naimen">{{ name112 }}</div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name103 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name104 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name105 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name106 }}</div>
+            </div>
+          </div>
+          <div class="Block1">
+            <div class="Description2">
+              <div class="Pers">{{ name107 }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="podpis">* - Dear Partner, in order to get the calculation actual for you it is necessary to fill the cells highlighted in yellow color with the data actual for your region. A few notes: <br>
+                1. Gross profit before taxation is taken in the calculation. <br>
+                2. In the table, where the payback period is calculated pink color highlighted really possible range of values.
+    </div>
+  </div>
+  <div class="but">
+    <button class="btn1" type="submit">Calculate</button>
+  </div>
+</div>
+</form>
+</body>
+</html>
